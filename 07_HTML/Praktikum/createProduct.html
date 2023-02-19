@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+
+<body>
+    <div>
+        <h1>Create Product</h1>
+        <h2>Detail Product</h2>
+        <form action="">
+            <div>
+                <label for="product-name">Product name :</label>
+                <br>
+                <input type="text" id="product-name" placeholder="" min="6" max="50" required>
+            </div>
+            <div>
+                <label for="product-cat">Product category:</label>
+                <br>
+                <select type="text" id="product-cat" name="product-cat" required>
+                    <option value=""> </option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="">Product Freshness :</label>
+                <br>
+                <div>
+                    <input id="brand-new" type="radio" name="product_freshness" value="Brand New" required>
+                    <label for="brand-new">Brand New</label>
+                </div>
+
+                <div>
+                    <input id="second-hank" type="radio" name="product_freshness" value="second-hank">
+                    <label for="second-hank">Second Hank</label>
+                </div>
+
+                <div>
+                    <input id="refurbished" type="radio" name="product_freshness" value="Refurbished">
+                    <label for="refurbished">Refurbished</label>
+                </div>
+            </div>
+            <div>
+                <label for="product-image">Image of Product</label>
+                <input id="product-image" name="product-image" type="file" required>
+            </div>
+            <div>
+                <label for="add-desc">Additional Description</label>
+                <div>
+                    <textarea name="add-desc" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div>
+                <label for="product-price">Product price :</label>
+                <br>
+                <input type="number" placeholder="$100" required>
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
