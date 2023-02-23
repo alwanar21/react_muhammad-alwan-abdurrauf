@@ -1,0 +1,35 @@
+/* createProduct Page Style*/
+
+select {
+    width: 71px;
+}
+
+#product-price {
+    width: 47px;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+/* landingPage Page Style*/
+
+.button__link {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 20px;
+
+}
+
+.button__black {
+    border: 1px black solid;
+}
+
+.button__news {
+    display: inline-block;
+    border: 1px black solid;
+}
+
+.input__news {
+    margin: 0 0 12px;
+    width: 500px;
+    height: 31px;
+}

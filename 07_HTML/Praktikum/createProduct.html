@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Create Product</title>
 </head>
 
@@ -21,7 +22,7 @@
             <div>
                 <label for="product-cat">Product category:</label>
                 <br>
-                <select type="text" id="product-cat" name="product-cat" required>
+                <select type="text" class="product-cat" id="product-cat" name="product-cat" required>
                     <option value=""> </option>
                     <option value=""></option>
                 </select>
@@ -57,7 +58,7 @@
             <div>
                 <label for="product-price">Product price :</label>
                 <br>
-                <input type="number" placeholder="$100" required>
+                <input id="product-price" type="number" placeholder="$100" required>
             </div>
             <button type="submit">Submit</button>
 

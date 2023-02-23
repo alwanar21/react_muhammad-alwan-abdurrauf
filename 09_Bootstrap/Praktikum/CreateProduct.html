@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm ">
+        <div class="container-lg">
+            <a class="navbar-brand fs-4 fw-normal" href="#">Simple header</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto d-flex gap-3">
+                    <a class="nav-link active bg-primary text-white rounded" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-primary" href="#">Features</a>
+                    <a class="nav-link text-primary" href="#">Pricing</a>
+                    <a class="nav-link text-primary" href="#">FAQs</a>
+                    <a class="nav-link text-primary" href="#">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="">
+            <img class="mx-auto d-block my-5" src="./src/bootstrap-logo.svg.png" alt="bootstrap--logo">
+            <h3 class="mx-auto text-center">Create Product</h3>
+            <p class="text-center col-10 fw-light text-secondary offset-1">
+                Below is an example form built entirely with Bootstrap’s formcontrols.Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+            <form class="row needs-validation col-md-8 offset-2 mx-auto mt-5" novalidate>
+                <h5 class="mb-3">Detail Product</h5>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label for="productName" class="form-label">Product name</label>
+                        <input type="text" id="productName" class="form-control" placeholder="" aria-label="First name">
+                        <div class="valid-feedback" required>
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-5">
+                        <label for="dropdown" class="form-label">Product Category</label>
+                        <select class="form-select " aria-label="Default select example" required>
+                            <option selected>Choose...</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row color-primary">
+                    <label for="username" class="form-label">Image of Product</label>
+                    <div class="mb-3 col-sm-4">
+                        <input class="form-control border-primary border-2" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="flexRadio" class="form-label">Product Freshness</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="New" />
+                        <label class="form-check-label" for="New">Brand New</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="Second" />
+                        <label class="form-check-label" for="Second">Second Hand</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="refurbished" />
+                        <label class="form-check-label" for="refurbished">refurbished</label>
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-check-label mb-3" for="text__area">Additional Description</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <label for="price" class="form-label">Product Price</label>
+                    <input type="number" class="form-control" id="price" placeholder="$ 1">
+                </div>
+
+                <button type="submit" class=" btn btn-primary rounded col-10 offset-1 mt-5">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h5 class="my-3 mx-auto text-center">List Product</h5>
+        <table class="table table-striped col-10">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Category</th>
+                    <th scope="col">Image of Product</th>
+                    <th scope="col">Product Freshness</th>
+                    <th scope="col">Additional Description</th>
+                    <th scope="col">Product Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1,001</th>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>Brand New</td>
+                    <td>adipiscing</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row">1,002</th>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>Second Hand</td>
+                    <td>adipiscing</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row">1,003</th>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>Brand New</td>
+                    <td>adipiscing</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">1,004</th>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>Refushed</td>
+                    <td>adipiscing</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row container mx-auto">
+        <form action="row col-md-8 offset-2  mt-5">
+            <input type="text" id="seaarchProductName" class="form-control w-25" placeholder="search by product Name"
+                aria-label="First name">
+        </form>
+        <div class="border-primary border-2 button-con">
+            <button class="btn btn-primary rounded-0">Deletion</button>
+            <button class="btn btn-light border-primary text-primary">Search</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

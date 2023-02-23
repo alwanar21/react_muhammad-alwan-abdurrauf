@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Landing Page</title>
 </head>
 
@@ -13,21 +14,31 @@
         <div>
             <header>
                 <h4>Simple Header</h4>
+                <hr>
             </header>
             <br>
-            <h1>Better Solutions For Your Business</h1>
-            <div>
-                <a href="#" target="_blank">Get Started</a>
-                <a href="" target="_blank">Watch Video</a>
-            </div>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <img src="./src/hero-img.png" alt="hero-img">
+            <section id="hero">
+                <div>
+                    <h1>Better Solutions For Your Business</h1>
+                    <p>We are team of talented designers making websites with Bootstrap</p>
+                    <div class="button__con">
+                        <a class="button__link button__black" href="#" target="_blank">Get Started</a>
+                        <a class="button__link" href="#" target="_blank">Watch Video</a>
+                    </div>
+                    </div>
+                <img src="./src/hero-img.png" alt="hero-img">
+            </section>
             <h2>Join Our Newsletter</h2>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <input type="text">
-            <br>
-            <button>Get Started</button>
+            <form action="">
+                <input type="text" class="input__news">
+            </form>
+            
+            <div>
+                <a class="button__link button__news" href="#">Get Started</a>
+            </div>
             <footer>
+                <hr>
                 <p>© Copyright <strong>Arsha.</strong> All Rights Reserved</p>
                 <small>Designed by BootstrapMade</small>
             </footer>
