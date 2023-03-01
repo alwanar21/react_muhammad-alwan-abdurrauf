@@ -39,19 +39,21 @@
                 Below is an example form built entirely with Bootstrap’s formcontrols.Each required form group has a
                 validation state that can be triggered by attempting to submit the form without completing it.
             </p>
-            <form class="row col-md-8 offset-2 mx-auto mt-5 needs-validation" novalidate>
+            <!-- needs-validation -->
+            <form class="row col-md-8 offset-2 mx-auto mt-5 " onsubmit="return validateForm()" novalidate>
                 <h5 class="mb-3">Detail Product</h5>
+
                 <!-- input text form -->
                 <div class="row mb-3">
                     <div class="col-sm-6">
                         <label for="validationName" class="form-label">Product name</label>
-                        <input type="text" class="form-control" id="validationName" value="" required>
+                        <input type="text" class="form-control productName" id="validationName" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- dropdown form -->
                 <div class="row mb-3">
                     <div class="col-sm-5">
@@ -66,60 +68,66 @@
                             Please select an option.
                         </div>
                     </div>
-            
                 </div>
+
+
+
                 <!-- file form -->
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label for="validationFileInput" class="form-label">Image of Product</label>
-                        <input type="file" class="form-control border-primary border-2" id="validationFileInput" value="" required>
+                        <input type="file" class="form-control border-primary border-2" id="validationFileInput"
+                            value="" required>
                         <div class="invalid-feedback">
                             Please choose a file.
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- select form -->
                 <div class="row mb-3">
                     <div class="col-sm-5">
                         <label for="validationSelect" class="form-label">Product Freshness</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="New" />
+                            <input class="form-check-input" type="radio" name="flexRadio" value=" Brand New" id="New" />
                             <label class="form-check-label" for="New">Brand New</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="Second" />
+                            <input class="form-check-input" type="radio" name="flexRadio" value="Second Hand"
+                                id="Second" />
                             <label class="form-check-label" for="Second">Second Hand</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="refurbished" />
+                            <input class="form-check-input" type="radio" name="flexRadio" value="refurbished"
+                                id="refurbished" />
                             <label class="form-check-label" for="refurbished">refurbished</label>
                         </div>
                         <div class="invalid-feedback">
                             Please provide a valid city.
                         </div>
-                        </div>
-                </div>
-            
-            <!-- text area form -->
-            <div class="mb-5">
-                <label for="validationTextArea" class="form-label">Additional Description</label>
-                <textarea class="form-control" id="validationTextArea" required style="height: 100px"></textarea>
-                <div class="invalid-feedback">
-                    please Add Description
-                </div>
-            </div>
-                
-            <!-- number input form -->
-            <div class="mb-5">
-                <label for="validationNumber" class="form-label">Product Price</label>
-                <input type="text" class="form-control" id="validationNumber" placeholder="$ 1" value="" required>
-                <div class="invalid-feedback">
-                    please Add price
                     </div>
+                </div>
+
+                <!-- text area form -->
+                <div class="mb-5">
+                    <label for="validationTextArea" class="form-label">Additional Description</label>
+                    <textarea class="form-control" id="validationTextArea" required style="height: 100px"></textarea>
+                    <div class="invalid-feedback">
+                        please Add Description
                     </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary  rounded col-10 offset-1 mt-5" type="submit">Submit form</button>
+                </div>
+
+                <!-- number input form -->
+                <div class="mb-5">
+                    <label for="validationNumber" class="form-label">Product Price</label>
+                    <input type="text" class="form-control" id="validationNumber" placeholder="$ 1" value="" required>
+                    <div class="invalid-feedback">
+                        please Add price
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary  rounded col-10 offset-1 mt-5" id="btnSubmit" type="submit">Submit
+                        form</button>
                 </div>
             </form>
             <script>
@@ -140,8 +148,8 @@
                             form.classList.add('was-validated')
                         }, false)
                     })
-                                })()
-                            </script>
+                })()
+            </script>
         </div>
     </div>
 
@@ -213,12 +221,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
