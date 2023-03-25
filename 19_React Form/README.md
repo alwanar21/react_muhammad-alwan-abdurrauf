@@ -27,5 +27,5 @@ untuk elemen input ia memiliki banyak tipe inputan seperti text, button, color, 
 Tipe validasi data Formulir :
 - **Client-side validation** adalah validasi yang dilakukan di sisi klien agar input sesuai dengan kebutuhan form. sebelum data form dikirimkan ke server.validasi ini ada 2 bagian yaitu Buil-in form validation, yaitu menggunakan fitur validasi langsung dari HTML5, dan menggunakan javascript.
 
--**Server-side validation** adalah validasi yang dilakukan di sisi user untuk memvalidasi data kembali sebelum disimpan di database. jika ditemukan kesalahan, maka response akan dikirim kembali ke client berupa koreksi atas kesalahan yang dibuat oleh pengguna
+- **Server-side validation** adalah validasi yang dilakukan di sisi user untuk memvalidasi data kembali sebelum disimpan di database. jika ditemukan kesalahan, maka response akan dikirim kembali ke client berupa koreksi atas kesalahan yang dibuat oleh pengguna
 
