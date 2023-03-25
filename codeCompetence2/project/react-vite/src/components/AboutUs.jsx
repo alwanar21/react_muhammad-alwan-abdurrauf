@@ -1,0 +1,15 @@
+import React from 'react'
+import stairs from '../assets/stairs.jpg'
+
+export default function AboutUs() {
+    return (
+        <div className='container my-5'>
+            <h2 className="text-center mb-4">AboutUs</h2>
+            <div className="w-50 mx-auto">
+                <img className='image' src={stairs} alt="stairs" />
+            </div>
+            <p className="mt-5 mb-3"><span class="tab"></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt excepturi repudiandae accusantium libero eveniet fugit cupiditate, suscipit consectetur deserunt explicabo similique ex exercitationem in vero. Atque veritatis pariatur sint, debitis quidem impedit neque cumque eveniet maiores illum ipsam eum? Earum ipsam, fugit nulla doloremque minus ad non corporis vitae excepturi possimus enim tempore placeat laborum hic cumque magni officia voluptatem dolorum repellendus nam praesentium veniam! Suscipit nisi libero cupiditate explicabo veniam placeat voluptatum eaque esse distinctio hic rem fugiat officiis corrupti doloremque asperiores enim sapiente eum culpa minima officia, repudiandae praesentium saepe deleniti! Accusantium ad maxime hic quo molestias, nostrum distinctio voluptas cumque iste dolores sint, qui unde velit magni excepturi voluptatibus veniam dolorum, asperiores consequatur? Cupiditate repellat, deserunt soluta laudantium provident nisi reiciendis. Vero accusamus unde quasi minus iusto magni rerum expedita! Cupiditate, harum enim quos autem odit dolor deserunt natus nemo eum iste quibusdam, cum error. Assumenda ut perspiciatis quisquam voluptatem tempore repellat temporibus alias inventore earum, quidem obcaecati officia possimus. Velit sequi vitae aperiam quasi nihil cumque explicabo corporis tempora, voluptatibus debitis illo minus delectus fugiat doloremque nam consectetur laborum possimus dicta est, quaerat porro. Nobis alias quis voluptates ducimus cum ab temporibus commodi et incidunt fugiat.</p>
+            <p className="mb-5"><span class="tab"></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt excepturi repudiandae accusantium libero eveniet fugit cupiditate, suscipit consectetur deserunt explicabo similique ex exercitationem in vero. Atque veritatis pariatur sint, debitis quidem impedit neque cumque eveniet maiores illum ipsam eum? Earum ipsam, fugit nulla doloremque minus ad non corporis vitae excepturi possimus enim tempore placeat laborum hic cumque magni officia voluptatem dolorum repellendus nam praesentium veniam! Suscipit nisi libero cupiditate explicabo veniam placeat voluptatum eaque esse distinctio hic rem fugiat officiis corrupti doloremque asperiores enim sapiente eum culpa minima officia, repudiandae praesentium saepe deleniti! Accusantium ad maxime hic quo molestias, nostrum distinctio voluptas cumque iste dolores sint, qui unde velit magni excepturi voluptatibus veniam dolorum, asperiores consequatur? Cupiditate repellat, deserunt soluta laudantium provident nisi reiciendis. </p>
+        </div>
+    )
+}
