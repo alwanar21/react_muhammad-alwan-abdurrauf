@@ -7,10 +7,10 @@ Beberapa poin yang saya dapat pada materi ini antara lain :
 1. **Form** adalah sesuatu yang penting pada pengembangan web yaitu digunakan untuk menghandle inputan dari user seperti kita jumpai saat login, mendaftarkan sesuatu, memberikan feedback, dan masih banyak lagi.
 
 Elemen-elemen pada form antara lain :
-- <input>
-- <textarea>
-- <radio>
-- <select>
+- input
+- text area
+- radio
+- select
 - radio button
 - checkbox
 
