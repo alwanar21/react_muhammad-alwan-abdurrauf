@@ -119,7 +119,6 @@ export default function ProductForm({ addData }) {
 
     return (
         <div className="container my-5">
-
             {/* article */}
             <div className="text-center">
                 <img
@@ -148,6 +147,7 @@ export default function ProductForm({ addData }) {
                             placeholder=""
                             ref={productNameRef}
                             name="productName"
+                            id="productName"
                         />
                         {errors.productName && <div className='text-danger'>{errors.productName}</div>}
                     </Form.Group>
